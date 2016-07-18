@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贾俊陆个人作品</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+ <style type="text/css">
+ 	 @keyframes move{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    *{
+    	padding: 0;
+    	margin:0;
+
+    }
+ 	.home{
+		width: 100%;
+		height: 100%;
+		
+	}
+	.home img{
+		width: 100%;
+		height: 680px;
+		display: block;
+	}
+	.home #name{
+		width: 300px;
+		height: 60px;
+		position: absolute;
+		left: 0;
+		top:55%;
+		margin-left:-300px; 
+		color: #fff;
+	}
+	#name h2{
+		width: 300px;
+		text-align: center;
+		font-family:'宋体';
+		font-size: 60px;
+		height: 60px;
+		margin-bottom:30px; 
+
+		text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+		 
+	}
+	#name h3{
+		width: 300px;
+		text-align: center;
+		font-size: 40px;
+		text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+	}
+	
+	.home #face{
+		width: 200px;
+		height: 200px;
+		border:1px solid rgb(0,0,0,);
+		border-radius: 50%;
+		position: absolute;
+		background: url(img/2.jpg); 
+		left:0;
+		margin-left:-100px; 
+		top:130px;
+		overflow: hidden;
+		transition-property:all;
+		transition-duration:0.5s;
+		transition-timing-function:ease-out;
+		transition-delay:0s; 
+		
+	}
+	.home #Face{
+		width: 205px;
+		height: 205px;
+		border-radius: 50%;
+		position: absolute;
+		left:0;
+		margin-left:-86px; 
+		top:127px;
+		box-shadow: 5px 0 4px red,0 5px 4px green,-5px 0 4px blue, 0  -5px 4px yellow;
+		animation: 1s move linear infinite;
+	}
+	.home #face img{
+		width: 100%;
+	}
+	.home #face:hover{
+		
+		transform: rotateY(360deg);
+	}
+
+	#link{
+		height: 60px;
+		
+		position: absolute;
+		left: 300px;
+		top:520px;
+
+	}	
+	#link li{
+		float: left;
+		border: 2px solid rgba(255,255,255,0.5);
+		border-radius: 50%;
+		margin-right: 330px;
+		font-size: 30px;
+		color: #fff;
+		width: 200px;
+		line-height: 60px;
+		text-align: center;
+		background: #45b39e;
+		cursor: pointer;
+		box-shadow: inset 0 0 10px #fff, 0px 10px 0px rgba(255,255,255,.5);
+		transition: .4s all ease;
+		position: relative;
+        left: 0;
+        top: 0;
+	}
+    #link li:active{
+    	top: 5px;
+        box-shadow: inset 0 0 20px #fff,0px 5px 0px rgba(255,255,255,.5);
+    }
+    #link li a{
+    	width: 200px;
+    	height: 60px;
+		line-height: 60px;
+		text-align: center;
+		color: #fff;
+		font-size: 30px;
+		display: block;
+    }
+	
+	 #link li:hover{
+		background: #ea8142;
+		color: #fff;
+	} 
+	#link .production{
+		margin-right: 0;
+	}
+	
+	.opus{
+		width: 100%;
+		height: 680px;
+		/* background: #45b39e; */
+		 background: #222a35; 
+		position: relative;
+		
+		
+	}
+	 #nav,#nav_1{
+		width:100%;
+		height: 60px;
+		background: #333;
+	}
+	
+	#nav{
+		z-index: 999;
+	}
+	
+	#ul1{
+            width: 200px;
+            margin: 12px 100px;
+        }
+    #ul1 li{
+            float: left;
+            font-size: 30px;
+            width: 24px;
+            height: 35px;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+            text-align: center;
+
+    }
+    #ul1 img{
+            position: absolute;
+            left: 0;
+            top: 0;
+    }
+    #ul2{
+    	margin-right:80px; 
+    }
+	#ul2 li{
+		float: left;
+		width: 100px;
+		height: 50px;
+		margin-top:5px;  
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		color: #fff;
+		cursor: pointer;
+		font-weight: bold;
+
+	}
+	#ul2 li a{
+		width: 100px;
+		height: 50px;
+		margin-top:5px;  
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		color: #fff;
+	}
+	#block {
+		width: 100px;
+		height: 50px;
+		background: #fff;
+		position: absolute;
+		left: 870px;
+		top:5px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		color: #000;
+		cursor: pointer;
+		font-weight: bold;
+		border-radius:10px; 
+	}
+    
+    #block a{
+    	width: 100px;
+		height: 50px;
+    	text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		color: #000;
+		font-weight: bold;
+    }
+	.opus .bar{
+		width: 100%;
+		height: 238px;
+		background: #45b39e;
+		padding-top:10px; 
+	}
+	
+	.title{
+		width: 800px;
+		height:100px;
+		margin: 5px auto 0;
+	}
+	.title div{
+		float: left;
+	}
+	.title .left,.title .right{
+		width: 250px;
+		height: 5px;
+		border-top:2px solid #ccc;
+		border-bottom:2px solid #ccc; 
+		margin-top: 45px;
+	}
+	.title .center{
+		width: 300px;
+		height: 100px;
+		font-size: 40px;
+		line-height: 100px;
+		text-align: center;
+		color: #000;
+		font-family: '宋体';
+		font-weight: bold;
+	}
+	
+	#works{
+		width: 465px;
+		height: 140px;
+		margin:0 auto;
+		
+	} 
+	#works ul{
+		width: 500px;
+	}
+
+	#works ul li{
+		width: 120px;
+		height: 120px;
+		margin-right: 50px;
+		float: left;
+		border: 1px #fff dashed;
+		border-radius:30px; 
+		position: relative;
+		z-index: 1;
+	}
+	#works ul #works_last{
+		margin-right: 0;
+	}
+	#works ul li img{
+		width: 100%;
+	}
+
+	#works ul li i{
+		position:absolute;
+		width: 32px;
+		height: 20px;
+		background: url(img/03.png);
+		left: 50%;
+		margin-left: -16px;
+		top:126px; 
+		display: none;
+	}
+	#works ul li.on{}
+	#works ul li.on i{
+		display: block;
+	} 
+
+	#works_1 div{
+		width: 800px;
+		
+		margin: 0 auto;
+		display: none;
+		color: #fff;
+		
+	}
+	#works_1 .css{
+		width: 220px;
+		margin: 5px auto;
+
+	}
+
+	.css li{
+		width: 100px;
+		height: 35px;
+		font-size: 20px;
+		line-height: 35px;
+		text-align: center;
+		float: left;
+		margin-right:10px;
+		background: #45b39e; 
+		border-radius:10px; 
+		cursor: pointer;
+	}
+	
+	#c_works{
+		width: 360px;
+		height: 260px;
+		position: relative;
+		margin: 20px auto;
+		perspective:800px;
+	}
+	#c_works li{
+		width: 360px;
+		height: 260px;
+		background: blue;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top:0;
+		color: #fff;
+		text-align: center;
+		line-height: 260px;
+		font-size: 60px;
+		opacity: 0;
+		transition: 1s all ease;
+		border: 3px solid #ccc;
+		border-radius: 15px;
+	}
+	#c_works li img{
+		height: 100%;
+		
+	}
+	#c_works .show{
+		opacity: 1;
+		z-index: 2;
+	}
+	#c_works .l1{
+		opacity: .5;
+		transform: translateX(-150px) rotateY(50deg);
+	}
+	#c_works .l2{	
+		transform: translateX(-260px) rotateY(80deg);
+	}
+	#c_works .r1{
+		opacity: .5;
+		transform: translateX(150px) rotateY(-50deg);
+	}
+	#c_works .r2{	
+		transform: translateX(260px) rotateY(-80deg);
+	}
+	 #project{
+            width: 680px;
+            margin: 0 auto;
+        }
+        #project li{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin: 10px;
+
+            position: relative;
+            overflow: hidden;
+            border-radius:50%; 
+        }
+        #project li a img{
+            width: 100%;
+        }
+        #project li a span{
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 52, 1, .8);
+            border-radius:50%; 
+            position: absolute;
+            left: 200px;
+            top: 0;
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            line-height: 150px;
+        }
+
+    #h5 h2{
+    	width: 500px;
+		font-size: 35px;
+		text-align: center;
+		color: #fff;
+		margin: 60px auto;
+    }
+    #h5 p{
+    	width: 500px;
+		font-size: 35px;
+		text-align: center;
+		color: #fff;
+		margin: 20px auto;
+    }
+	#Totop{
+		width: 50px;
+		height: 50px;
+		background: url(img/02.png) no-repeat;
+		background-size: cover;
+		position: fixed;
+		z-index: 999;
+		right: 50px;
+		bottom: 60px;
+		cursor: pointer;
+		opacity: 0;
+	}
+
+	#con_4{
+		width: 100%;
+		height: 680px;
+		background: #336666;
+		position: relative;	
+		overflow: hidden;
+	}
+
+	#con_4 h3{
+		width: 100%;
+		font-size: 45px;
+		color: #fff;
+		line-height: 45px;
+		text-align: center;
+		margin:100px auto;
+	}
+	
+ </style>
+  <script src="js/move.js"></script>
+  <script src="js/elastic.js"></script>
+  <script type="text/javascript">
+  	    //补零
+        function toDouble(n){
+            return n<10?'0'+n:''+n;
+
+        }
+
+         //封装获取元素位置函数
+        function getPos(obj){
+			var l=0;
+			var t=0;
+		   while(obj){
+			   l+=obj.offsetLeft;
+			   t+=obj.offsetTop;
+			   obj=obj.offsetParent;
+		   }
+		   return{left:l,top:t}
+		} 
+
+		function findInArr(n,arr){
+			for(var i = 0; i < arr.length; i++){
+				if(arr[i] == n) return true;
+			}
+			return false;
+		}
+
+		function hoverDir(obj, ev){
+            var x=obj.offsetLeft+obj.offsetWidth/2-ev.clientX;
+            var y=obj.offsetTop+obj.offsetHeight/2-ev.clientY;
+
+            return Math.round((Math.atan2(y, x)*180/Math.PI+180)/90)%4;
+        }
+
+		//获取class
+		function getByClass(oParent,sClass){
+			if(oParent.getElementsByClassName){
+				return oParent.getElementsByClassName(sClass);
+			}else{
+				var aEle = oParent.getElementsByTagName('*');
+				var arr2 = [];
+				for(var i = 0; i < aEle.length; i++){
+					var tmp = aEle[i].className.split(' ');
+					if(findInArr(sClass,tmp)){
+						arr2.push(aEle[i]);
+					}
+				}
+				return arr2;
+			}
+		}
+        window.onload = function () {
+
+        	var oName=document.getElementById('name');
+        	var oFace=document.getElementById('Face');
+            var sFace=document.getElementById('face');
+	            setTimeout(function(){
+	            	elastic(oName,825)
+	            },200)
+	            setTimeout(function(){
+	            	move(sFace,{left:680},{transition:100})
+	            	
+	            },30)
+	        	setTimeout(function(){
+	            	elastic(oFace,1150)
+	            	
+	            },50)	
+	        	
+            
+        	
+        		var oUl=document.getElementById('ul1');
+            	var aImg=oUl.getElementsByTagName('img');
+
+            	function clock(){
+                var oDate=new Date();
+                var str=toDouble(oDate.getHours())+toDouble(oDate.getMinutes())+toDouble(oDate.getSeconds());
+                for(var i=0; i<aImg.length; i++){
+                    // aImg[i].style.top=-35*str.charAt(i)+'px';
+                    move(aImg[i], {top: -35*str.charAt(i)}, {easing: 'linear', duration: 500});
+                }
+            }
+            clock();
+            setInterval(clock, 1000);
+        	
+
+        	/***图片时钟函数***/
+
+        	(function(){
+        		var oBox=document.getElementById('nav');
+	            var oBox2=document.getElementById('nav_1');
+
+	            var top=getPos(oBox).top;
+	            var oTotop=document.getElementById('Totop');
+	            //滚动条滚动事件
+	            window.onscroll=function(){
+	            	//获取滚动条滚动距离
+	                var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	                //做判断
+	                if(scrollTop>=top){
+	                    oBox.style.position='fixed';
+	                    oBox.style.left=0;
+	                    oBox.style.top=0;
+	                    oBox2.style.display='block';
+	                }else{
+	                    oBox.style.position='';
+	                    oBox2.style.display='none';
+	                }
+
+	                	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+
+					if (scrollTop>500) {
+						move(oTotop,{opacity:1});
+					} else {
+						move(oTotop,{opacity:0});
+					}
+				};
+				// 固定导航
+				var timer;
+				oTotop.onclick=function(){
+					
+	                var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	                var start=scrollTop;
+	                var dis=0-start;
+
+	                var count=Math.floor(1000/30);
+	                var n=0;
+	                clearInterval(timer);
+	                timer=setInterval(function(){
+	                    n++;
+
+	                    var a=n/count;
+	                    var cur=start+dis*a;
+	                    document.documentElement.scrollTop=document.body.scrollTop=cur;
+	                    if(n==count){
+	                        clearInterval(timer);
+	                    }
+	                }, 30);
+	            };
+
+	            //回到顶部
+	            
+
+
+            })();
+			
+			
+			(function(){
+			var oUl=document.getElementById('ul2');
+            var aLi=oUl.children;
+            var oBlock=document.getElementById('block');
+
+            for(var i=0; i<aLi.length; i++){
+            	aLi[i].index=i;
+                aLi[i].onmouseenter=function(){
+                    elastic(oBlock, getPos(this).left);
+                    oBlock.innerHTML=aLi[this.index].innerHTML;
+                    
+                };
+                aLi[i].onmouseleave=function(){
+                    elastic(oBlock, 870);
+                    
+                   oBlock.innerHTML='<a href="javascript:;">首页</a>';
+                };
+            }
+			})();
+			
+			//作品选项卡
+			
+			(function(){
+				var oWorks=document.getElementById('works');
+				var aLi=oWorks.getElementsByTagName('li');
+				var oWorks_1=document.getElementById('works_1');
+				var aDiv=oWorks_1.getElementsByTagName('div');
+
+				for (var i = 0; i < aLi.length; i++) {
+					(function(index){
+						aLi[i].onmouseover=function(){
+							
+							for (var j = 0; j < aLi.length; j++) {
+								aLi[j].className='';
+								aLi[j].innerHTML='<img src="img1/'+j+'.png">\
+							<i></i>';
+							    aDiv[j].style.display='none';
+							}
+
+							this.className='on';
+							this.innerHTML='<img src="img2/'+index+'.png">\
+							<i></i>';
+							aDiv[index].style.display='block';
+						}
+					})(i);
+				}
+		    })();
+			
+			
+			//JS作品移入效果
+			
+			(function(){
+			var oUl=document.getElementById('project');
+            var aLi=oUl.children;
+
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].onmouseenter=function(ev){
+                    var oEvent=ev || event;
+                    var n=hoverDir(this, oEvent);
+                    var oSpan=this.children[0].children[1];
+                   /* console.log(oSpan)*/
+                    switch(n){
+                        case 0:
+                            oSpan.style.left='200px';
+                            oSpan.style.top=0;
+                            break;
+                        case 1:
+                            oSpan.style.left=0;
+                            oSpan.style.top='200px';
+                            break;
+                        case 2:
+                            oSpan.style.left='-200px';
+                            oSpan.style.top=0;
+                            break;
+                        case 3:
+                            oSpan.style.left=0;
+                            oSpan.style.top='-200px';
+                            break;
+                    }
+                    move(oSpan, {left: 0, top: 0});
+                };
+                aLi[i].onmouseleave=function(ev){
+                    var oEvent=ev || event;
+                    var n=hoverDir(this, oEvent);
+
+                    var oSpan=this.children[0].children[1];
+                    switch(n){
+                        case 0:
+                            move(oSpan, {left: 200, top: 0});
+                            break;
+                        case 1:
+                            move(oSpan, {left: 0, top: 200});
+                            break;
+                        case 2:
+                            move(oSpan, {left: -200, top: 0});
+                            break;
+                        case 3:
+                            move(oSpan, {left: 0, top: -200});
+                            break;
+                    }
+                };
+            }
+			})();
+
+			
+			//CSS移动变大效果
+			
+ 			(function(){
+ 				var oC_works=document.getElementById('c_works');
+ 				var aLi=document.querySelectorAll('#c_works li');
+ 				var oPrevious=document.getElementById('previous');
+ 				var oNext=document.getElementById('next');
+
+ 				var arr=[];
+ 				for (var i = 0; i < aLi.length; i++) {
+ 					arr[i]=aLi[i].className;	
+ 				}
+
+ 				oPrevious.onclick=function(){
+ 					arr.unshift(arr.pop());
+ 					for (var i = 0; i < aLi.length; i++) {
+ 						aLi[i].className=arr[i];
+ 					}
+ 				}
+ 				oNext.onclick=function(){
+ 					arr.push(arr.shift());
+ 					for (var i = 0; i < aLi.length; i++) {
+ 						aLi[i].className=arr[i];
+ 					}
+ 				}
+ 			})();
+        };
+            
+    
+  </script>
+<body>
+    <div id="Totop"></div>
+	<div class="home">
+		
+		<img src="img/home-7.jpg">
+		<div id="name">
+			<h2>贾俊陆</h2>
+			<h3>WEB前端工程师</h3>
+		</div>
+		<div id="Face"></div>
+		<div id="face">
+			
+		</div>	
+		<ul id="link">
+			<li class="message">
+				<a href="#opus">个人作品</a>
+			</li>
+			
+			<li class="production">
+				
+				<a href="#con_4">个人信息</a>
+			</li>
+			
+		</ul>
+		
+	</div>
+	
+	
+	<div class="opus" id="opus">
+		<div id="nav" class="clearfix">
+		    <ul id="ul1" class="fl clearfix">
+		        <li><img src="img/num.png"></li>
+		        <li><img src="img/num.png"></li>
+		        <li>:</li>
+		        <li><img src="img/num.png"></li>
+		        <li><img src="img/num.png"></li>
+		        <li>:</li>
+		        <li><img src="img/num.png"></li>
+		        <li><img src="img/num.png"></li>
+    		</ul>
+			<ul id="ul2" class="fr clearfix">
+				<li><a href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">简历</a></li>
+				<li><a href="javascript:;">作品</a></li>
+				<li><a href="javascript:;">联系</a></li>
+			</ul>
+			<div id="block"><a href="javascript:;">首页</a></div>
+		</div>
+		<div id="nav_1" style="display: none;" ></div>
+		<div class="bar">
+			<div class="title clearfix">
+				<div class="left"></div>
+				<div class="center">作 品 展 示</div>
+				<div class="right"></div>
+			</div>
+			<div id="works">
+				<ul>
+					<li class="on">
+						<img src="img2/0.png">
+						<i></i>
+					</li>
+					<li>
+						<img src="img1/1.png">
+						<i></i>
+					</li>
+					<li id="works_last">
+						<img src="img1/2.png">
+						<i></i>
+					</li>	
+				</ul>
+			</div>
+			<div id="works_1">
+				<div style="display: block;">
+					<ul class="css clearfix">
+						<li id="previous">Previous</li>
+						<li id="next">Next</li>
+					</ul>
+					<ul id="c_works">
+						<!-- <li class="">
+							1
+						</li> -->
+						<li class="l2">
+							<a href="CSS-html/xiaomi/index.html">
+							  <img src="img/444.jpg">
+							</a>
+						</li>
+						<li class="l1">
+							<a href="CSS-html/aiQiyi/aiqiyi.html">
+							  <img src="img/222.png">
+							</a>
+						</li>
+						<li class="show">
+							<a href="CSS-html/MLS/mls.html">
+							  <img src="img/111.jpg">
+							</a>
+						</li>
+						<li class="r1">
+							<a href="CSS-html/lhhx/index.html">
+							  <img src="img/333.jpg">
+							</a>
+						</li>
+						<li class="r2">
+							<a href="CSS-html/lhhx/index.html">
+							  <img src="img/555.jpg">
+							</a>
+						</li>
+						<!-- <li class="" >7</li>
+						<li class="">8</li> -->
+					</ul>
+				</div>
+				<div>
+				    
+				    
+				    	<ul id="project">
+				    		<li>
+					    		<a href="JS-html/Loupe.html">
+					    		    <img src="cat/1.jpg">
+					    			<span>放大镜效果</span>
+					    		</a>
+				    		</li>
+							<li>
+								
+					    		<a href="JS-html/more img.html"><img src="cat/2.jpg">
+					    			<span>多图片展示</span>
+					    		</a>
+					    		
+				    		</li>
+				    		<li>
+					    		<a href="JS-html/accordion.html"><img src="cat/3.jpg">
+					    			<span>手风琴效果</span>
+					    		</a>
+				    		</li>
+				    		<li>
+					    		<a href="JS-html/continuous.html"><img src="cat/4.jpg">
+					    			<span>无缝滚动</span>
+					    		</a>
+				    		</li>
+				    		<li>
+					    		<a href="JS-html/picture.html"><img src="cat/5.jpg">
+					    			<span>照片墙</span>
+					    		</a>
+				    		</li>
+				    		<li>
+					    		<a href="JS-html/gulp.html"><img src="cat/6.jpg">
+					    			<span>吞吐图片</span>
+					    		</a>
+				    		</li>
+				    		<li>
+					    		<a href="JS-html/zns_demo3.html"><img src="cat/7.jpg">
+					    			<span>iphone</span>
+					    		</a>
+				    		</li>
+				    		<li>
+					    		<a href="JS-html/move.html"><img src="cat/8.jpg">
+					    			<span>拖拽变大</span>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    
+
+				</div>
+				<div id="h5">
+				      <h2>H5&CSS3作品</h2>
+					  <p>正在跟新敬请期待</p>
+				</div>	
+			</div>
+		</div>
+		
+	</div>
+	<div id="con_4">
+		<h3>ABOUT ME</h3>
+	</div>
+	
+</body>
+</html>

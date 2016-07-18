@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        h2{
+            width: 200px;
+            margin:0 auto; 
+            font-size: 30px;
+            color: #fff;
+        }
+        #ul1{
+            width: 666px;
+            margin: 0px auto;
+        }
+        #ul1 li{
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+        li img{
+            width: 100%;
+        }
+    </style>
+    <script src="js/move.js"></script>
+    <script>
+        window.onload = function () {
+            var oUl=document.getElementById('ul1');
+            var aLi=oUl.children;
+
+            var zIndex=999;
+            // 布局转换
+            var aPos=[];
+            for(var i=0; i<aLi.length; i++){
+                aPos[i]={
+                    left: aLi[i].offsetLeft,
+                    top: aLi[i].offsetTop
+                };
+            }
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].style.left=aPos[i].left+'px';
+                aLi[i].style.top=aPos[i].top+'px';
+                aLi[i].style.position='absolute';
+                aLi[i].style.margin=0;
+            }
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].onmouseover=function(){
+                    this.style.zIndex=zIndex++;
+                    move(this, {width: 300, height: 300, marginLeft: -50, marginTop: -50}, {duration: 500});
+                };
+                aLi[i].onmouseout=function(){
+                    move(this, {width: 200, height: 200, marginLeft: 0, marginTop: 0}, {duration: 500});
+                };
+            }
+        };
+    </script>
+</head>
+<body style="background: #999966">
+    <h2>多图片展示</h2>
+    <ul id="ul1">
+        <li><img src="JS-img/mm1_big.png"></li>
+        <li><img src="JS-img/mm2_big.png"></li>
+        <li><img src="JS-img/mm3_big.png"></li>
+        <li><img src="JS-img/mm4_big.png"></li>
+        <li><img src="JS-img/mm5_big.png"></li>
+        <li><img src="JS-img/mm6_big.png"></li>
+        <li><img src="JS-img/mm7_big.png"></li>
+        <li><img src="JS-img/mm8_big.png"></li>
+        <li><img src="JS-img/mm9_big.png"></li>
+    </ul>
+</body>
+</html>

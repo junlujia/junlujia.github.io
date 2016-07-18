@@ -1,0 +1,131 @@
+body {
+  background: #f2f2f2;
+}
+.head {
+  width: 580px;
+  margin: 0 auto;
+  height: 50px;
+  background: #f2f2f2;
+}
+.head h1 {
+  width: 174px;
+  height: 50px;
+  background: url(../img/5_01.png) no-repeat;
+  text-indent: -999em;
+}
+.barner {
+  width: 320px;
+  height: 150px;
+  background: url(../img/6.png);
+  margin: 0 auto;
+  position: relative;
+}
+.barner .find {
+  width: 265px;
+  height: 36px;
+  background: #ffffff url(../img/7.png) no-repeat 15px 10px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding-left: 35px;
+}
+.list {
+  width: 320px;
+  height: 68px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+.list a {
+  width: 25%;
+  height: 68px;
+  box-sizing: border-box;
+  border-right: 1px #dddddd solid;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+.list a .icon1 {
+  width: 35px;
+  height: 35px;
+  background: url(../img/ico1.png);
+  background-size: 100%;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+.list a span {
+  line-height: 18px;
+  color: #333333;
+}
+.list a .icon2 {
+  width: 35px;
+  height: 35px;
+  background: url(../img/ico2.png);
+  background-size: 100%;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+.list a span {
+  line-height: 18px;
+  color: #333333;
+}
+.list a .icon3 {
+  width: 35px;
+  height: 35px;
+  background: url(../img/ico3.png);
+  background-size: 100%;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+.list a span {
+  line-height: 18px;
+  color: #333333;
+}
+.list a .icon4 {
+  width: 35px;
+  height: 35px;
+  background: url(../img/ico4.png);
+  background-size: 100%;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+.list a span {
+  line-height: 18px;
+  color: #333333;
+}
+.list .last {
+  border-right: none;
+}
+.intro{width:320px; height:115px; position:relative; margin:13px auto; background:#f2f2f2;}
+  .in-1{position:absolute; left:0; top:0;}
+  .in-2{position:absolute; right:0; top:0;}
+  .in-3{position:absolute; right:0; bottom:0;}
+  .price{width:320px; height:130px; background:#FFF; margin:0 auto;
+          border-bottom:1px #dddddd solid;} 
+  .top,.center,.bottom{height:22px;  padding:11px 0;}
+  .top p{border-left:5px #f37e0b solid; padding-left:17px;
+         line-height:22px; height:22px;   }
+  .price li{width:25%; height:43px; box-sizing:border-box; border-top:1px #dddddd solid;
+            border-right:1px #dddddd solid; float:left; text-align:center; line-height:43px;}
+   .brand{width:320px; height:198px; background:#FFF; margin:0 auto;
+          border-bottom:1px #dddddd solid;} 
+		  
+   .center h3{border-left:5px #4881c9 solid; padding-left:17px;
+         line-height:22px; height:22px;  }
+   .brand li{width:25%; height:77px; box-sizing:border-box; border-top:1px #dddddd solid;
+            border-right:1px #dddddd solid; float:left; 
+			background:url(img/8.png) no-repeat 22px 10px;
+			}
+	.brand li p{text-align:center; line-height:31px; margin-top:47px;}	
+	.bottom p{border-left:5px #48c242 solid; padding-left:17px;
+         line-height:22px; height:22px;   }	
+	  li.lastone{border-right:none;}
+	.stern{width:320px; height:138px; background:url(img/9.png); margin:13px auto;
+	            margin-bottom:0;}
+	.relation{height:80px; background:#ffffff; overflow:hidden; text-align:center;
+	}
+	 .release{width:204px; height:16px; margin:20px auto 15px auto;}
+	 .release li{padding:0 10px; border-right:1px #999 solid; float:left;
+	             line-height:16px; font-size:14px;}
+	 .release li.lastone{border-right:none;}
+	 .relation p{color:#999; line-height:12px;}
+	 .relation p span{color:#ff5500; font-weight:bold;}
